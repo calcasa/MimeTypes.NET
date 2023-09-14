@@ -74,8 +74,6 @@
             /// video/x-msvideo
             /// </summary>
             public const string XMsvideo = Prefix + "x-msvideo";
-
-            
         }
     }
 }

@@ -68,7 +68,6 @@
             /// image/webp
             /// </summary>
             public const string Webp = Prefix + "webp";
-                        
         }
     }
 }

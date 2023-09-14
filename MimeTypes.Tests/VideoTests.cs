@@ -5,7 +5,9 @@ namespace Mainwave.MimeTypes.Tests;
 [TestFixture]
 public class VideoTests
 {
+    [TestCase(MimeType.Video.Av1, "video/av1")]
     [TestCase(MimeType.Video.H264, "video/h264")]
+    [TestCase(MimeType.Video.H265, "video/h265")]
     [TestCase(MimeType.Video.Mp2t, "video/mp2t")]
     [TestCase(MimeType.Video.Mp4, "video/mp4")]
     [TestCase(MimeType.Video.Mpeg, "video/mpeg")]
@@ -14,6 +16,7 @@ public class VideoTests
     [TestCase(MimeType.Video.Threegpp, "video/3gpp")]
     [TestCase(MimeType.Video.Threegpp2, "video/3gpp2")]
     [TestCase(MimeType.Video.Webm, "video/webm")]
+    [TestCase(MimeType.Video.XMatroska, "video/x-matroska")]
     [TestCase(MimeType.Video.XMsvideo, "video/x-msvideo")]
     public void AssertVideoMimeTypeValue(string valueUnderTest, string expectedValue)
     {
